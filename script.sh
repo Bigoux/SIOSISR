@@ -1,8 +1,9 @@
 #!/bin/bash
 # Script to add a user to Linux system
 if [ $(id -u) -eq 0 ]; then
-	read -p "Arnolde : " username
-	read -s -p "Popers : " password
+	read -p "Alves : " username
+	read -s -p "sio2026 : " password
+
 	egrep "^$username" /etc/passwd >/dev/null
 	if [ $? -eq 0 ]; then
 		echo "$username exists!"
